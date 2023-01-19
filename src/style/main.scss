@@ -9,7 +9,12 @@ html, body {
   
   font-family: Silom;
   color: #674640;
-  font-size: 34px;
+  font-size: 38px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }
 
 .scroll-container {
@@ -42,6 +47,7 @@ html, body {
 }
 
 .scroll-area {
+  position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -51,3 +57,22 @@ html, body {
 .scroll-area:nth-of-type(2) { background-image: url('../images/maanii2.png'); }
 .scroll-area:nth-of-type(3) { background-image: url('../images/maanii3.png'); }
 .scroll-area:nth-of-type(4) { background-image: url('../images/maanii4.png'); }
+.scroll-area:nth-of-type(5) { background-image: url('../images/maanii5.png'); }
+.scroll-area:nth-of-type(6) { background-image: url('../images/maanii6.png'); }
+.scroll-area:nth-of-type(7) { background-image: url('../images/maanii7.png'); }
+
+.cover1 {
+  position: absolute;
+  top: 150px;
+  left: 30px;
+  background: url('../images/cover1.png');
+  width: 450px;
+  height: 280px;
+}
+
+.scroll-area:nth-of-type(7) p {
+  position: absolute;
+  z-index: 2;
+  top: 160px;
+  left: 80px;
+}

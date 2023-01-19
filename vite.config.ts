@@ -9,7 +9,7 @@ import react from '@vitejs/plugin-react';
 export default ({ mode }) => defineConfig({
   root: './app', // Run with `app` as root, so that files like `index.html` are by default referenced from there
   build: {
-    outDir: '../dist',
+    outDir: '../docs',
   },
   publicDir: './public',
   

@@ -8,8 +8,8 @@ html, body {
   padding: 0;
   
   font-family: Silom;
-  color: #674640;
-  font-size: 38px;
+  color: #643736;
+  font-size: 32px;
 }
 
 p {
@@ -38,19 +38,20 @@ p {
   scroll-snap-align: start;
 }
 
-.scroll-area:nth-of-type(odd) {
+.scroll-area {
   background-color: #e6b698;
 }
 
-.scroll-area:nth-of-type(even) {
+.scroll-area:nth-of-type(1) {
   background-color: #e5c5b4;
 }
 
 .scroll-area {
   position: relative;
-  background-size: cover;
+  // background-size: cover;
+  background-size: 130%;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: top center;
 }
 
 .scroll-area:nth-of-type(1) { background-image: url('../images/maanii1.png'); }
@@ -63,16 +64,46 @@ p {
 
 .cover1 {
   position: absolute;
-  top: 150px;
-  left: 30px;
   background: url('../images/cover1.png');
-  width: 450px;
-  height: 280px;
+  top: 87px;
+  left: 0;
+  width: 386px;
+  height: 260px;
 }
 
-.scroll-area:nth-of-type(7) p {
+.scroll-area.yubi p {
   position: absolute;
   z-index: 2;
-  top: 160px;
-  left: 80px;
+  top: 86px;
+  left: 16px;
+  line-height: 1.2;
+  filter: blur(0.4px);
+  -webkit-filter: blur(0.4px);
 }
+
+.scroll-area.yubi .trigger1 {
+  background: black;
+  opacity: 0;
+  position: absolute;
+  z-index: 3;
+  top: 548px;
+  left: 280px;
+  width: 75px;
+  height: 96px;
+}
+.scroll-area.yubi .trigger2 {
+  background: black;
+  opacity: 0;
+  position: absolute;
+  z-index: 3;
+  top: 478px;
+  left: 270px;
+  width: 33px;
+  height: 32px;
+}
+
+.hidden, .visible {
+  transition: 500ms ease-in;
+}
+.hidden { opacity: 0; }
+.visible { opacity: 1; }

@@ -61,6 +61,7 @@ p {
 .scroll-area:nth-of-type(5) { background-image: url('../images/maanii5.png'); }
 .scroll-area:nth-of-type(6) { background-image: url('../images/maanii6.png'); }
 .scroll-area:nth-of-type(7) { background-image: url('../images/maanii7.png'); }
+.scroll-area:nth-of-type(8) { background-image: url('../images/maanii8.png'); }
 
 .cover1 {
   position: absolute;
@@ -107,3 +108,19 @@ p {
 }
 .hidden { opacity: 0; }
 .visible { opacity: 1; }
+
+.question-marks {
+  display: inline-block;
+  vertical-align: top;
+  width: 80px;
+  padding-left: 6px;
+}
+.question-marks :is(.placeholder, .content) {
+  position: absolute;
+  transform-origin: bottom;
+  transition: all 800ms ease-in;
+}
+.question-marks .placeholder { opacity: 1; }
+.question-marks .content { opacity: 0; transform: scale(1.6); }
+.question-marks.content-visible .placeholder { opacity: 0; }
+.question-marks.content-visible .content { opacity: 1; transform: scale(1); }
